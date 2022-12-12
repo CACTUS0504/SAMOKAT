@@ -1,0 +1,251 @@
+#section-4{
+    display: flex;
+    width:90%;
+    margin: auto;
+    justify-content: space-between;
+  }
+  
+  #section-4 > div
+  {
+      width: 24vmin;
+      height: 40vmin;
+      background: white;
+      box-shadow: 0vmin 0vmin 2vmin 0.5vmin;
+      border-radius: 2vmin;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+  }
+  
+  #section-4 > div::before
+  {
+      position: absolute;
+      width: 24vmin;
+      height: 18vmin;
+      border-radius: 2vmin 2vmin 12vmin 12vmin;
+      transform: translateY(-22vmin);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 10vmin;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: 700;
+  }
+  
+  .Red::before
+  {
+      content: "01";
+      background: red;
+  }
+  
+  .Green::before
+  {
+      content: "02";
+      background: green;
+  }
+  
+  .Blue::before
+  {
+      content: "03";
+      background: blue;
+  }
+  
+  #section-4 > div > p
+  {
+      text-align: center;
+      color:black;
+  }
+  
+  #section-4 > div > button
+  {
+      width: 12vmin;
+      height: 4vmin;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4vmin;
+      margin-top: 2vmin;
+      margin-bottom: 2vmin;
+      color: white;
+      border: 0vmin solid rgb(0, 0, 0);
+  }
+  
+  .Red > button
+  {
+      background: red;
+  }
+  
+  .Green > button
+  {
+      background: green;
+  }
+  
+  .Blue > button
+  {
+      background: blue;
+  }
+  
+  .Red:hover, .Green:hover, .Blue:hover
+  {
+      opacity: 1;
+      transform: scale(1.1);
+  }
+
+  main{
+    width: 55vw;
+    margin-left: 20vw;
+  }
+
+  h2{
+    font-size: 30px;
+    margin-top: 60px;
+  }
+  
+  p{
+    font-size: 20px;
+  }
+
+  ul{
+    font-size: 18px;
+  }
+
+  ul > li{
+    margin-top: 10px;
+  }
+
+  p,h2{
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .cardText{
+    line-height: 1.2;
+    width: 90%;
+  }
+
+.reasons_image{
+  display: block;
+  width: 100%;
+  box-shadow: 0px 10px 15px 10px #000;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+main{
+  position: relative;
+}
+
+
+.gal-obj{
+  margin: 0 auto;
+  width: 60%;
+  position: relative;
+}
+
+.gal-obj p{
+  position: absolute;
+  top: 0;
+  left: auto;
+  opacity: 0;
+  color: white;
+  font-size: 50px;
+  padding: 10px;
+  width: 95%;
+  margin: 20% auto;
+  transform: translateY(-100px);
+  transition: all 0.2s ease-in-out;
+}
+
+.gal-obj .img-wrapper{
+  border-radius: 10px;
+  background-color: rgba(58, 1, 132, 0.44);
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.gal-obj:hover>.img-wrapper{
+  opacity: 1;
+}
+
+.gal-obj:hover>.img-wrapper p{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+@media(max-width:858px) {
+  .reasons_image{
+    width: 100%;
+    box-shadow: 0px 5px 7px 5px #000;
+  }
+  .gal-obj{
+    width: 100%;
+  }
+  .gal-obj p{
+    font-size: 20px;
+  }
+  #section-4{
+    width:100%;
+    flex-direction: column;
+    margin-left: 5vw;
+  }
+  .cardType{
+    margin-top: 10vh;
+  }
+
+  #section-4 > div
+  {
+      width: 48vmin;
+      height: 80vmin;
+      background: white;
+      box-shadow: 0vmin 0vmin 2vmin 0.5vmin;
+      border-radius: 2vmin;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+  }
+  
+  #section-4 > div::before
+  {
+      position: absolute;
+      width: 48vmin;
+      height: 36vmin;
+      border-radius: 4vmin 4vmin 24vmin 24vmin;
+      transform: translateY(-46vmin);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 10vmin;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: 700;
+  }
+  #section-4 > div > button
+  {
+      width: 24vmin;
+      height: 8vmin;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4vmin;
+      margin-top: 2vmin;
+      margin-bottom: 2vmin;
+      color: white;
+      border: 0vmin solid rgb(0, 0, 0);
+  }
+  .cardText{
+    font-size: 17px;
+  }
+  
+}

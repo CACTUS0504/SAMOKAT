@@ -1,0 +1,182 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+    <title>Samokat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">    
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/reasons.css"> 
+    <link rel="icon" type="image/png" href="../img/scooter.png">
+    <script src="https://kit.fontawesome.com/1317bdbbb8.js" crossorigin="anonymous"></script>
+    <script id="func" type='text/javascript'>
+        function changeTo(st) {
+            var a = document.getElementsByClassName('cardType');
+            Array.prototype.forEach.call(a, function (el) {
+                el.style.filter = 'blur(10px)';
+                el.style.transition = '0.7s';
+                el.style.transform = 'scale(0.9)';
+            });
+            var o = document.getElementById(st);
+            o.style.filter = 'none';
+            o.style.transform = 'scale(1.1)';
+        }
+        function changeFrom() {
+            var a = document.getElementsByClassName('cardType');
+            Array.prototype.forEach.call(a, function (el) {
+                el.style.filter = 'none';
+                el.style.transition = '0.7s';
+                el.style.transform = 'none';
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id = "check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo">
+                    <img src="../img/logo.png" alt="">
+                </label>
+                <ul class="nav-items">
+                    <li>
+                        <a href="catalog.html">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="delivery.html">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="reasons.html">О электросамокатах</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <h2>О электросамокатах</h2>
+        <div class = "gal-obj">
+            <img src="../img/reasons/reasons1.jpg" alt="самокат" class = "reasons_image">
+            <div class = "img-wrapper">
+                <p>Электросамокаты - это будущее</p>
+            </div>
+        </div>
+        <p>Электросамокаты в последнее время настолько популярны, что сейчас идет активная работа по  включению их в ПДД в качестве одного из равноправных и законных участников дорожного движения. Для них даже название придумали: «средство индивидуальной мобильности». Но пока одни уверенно рассекают по городу на самокате, другие до сих пор не понимают, зачем он нужен. Сейчас мы отбросим все ваши сомнения и убедим в необходимости этого средства передвижения.</p>
+        <h2>Зачем мне нужен электросамокат?</h2>
+        <div class = "gal-obj">
+            <img src="../img/reasons/reasons2.jpg" alt="самокат" class = "reasons_image">
+            <div class = "img-wrapper">
+                <p>Электросамокаты нужны всем</p>
+            </div>
+        </div>
+        <p>Для чего можно использовать электросамокат кроме развлечений детей и подростков? Вот несколько примеров, наглядно показывающих, что это совсем не игрушка. Электросамокаты подходят для:</p>
+        <ul>
+            <li>Поездок на работу и по делам. Владелец электросамоката не сталкивается с толчеей в общественном транспорте и не стоит в пробках на забитых городских улицах. При этом и силы особенно не тратятся, а маршрут можно построить так, чтобы, например, проехать через парк, подышать свежим воздухом.</li>
+            <li>Перемещений больных и пожилых людей, которым сложно передвигаться пешком регулярно или после перенесенной болезни или операции.</li>
+            <li>Прогулок, например, поездок в парк, на природу или осмотр достопримечательностей.</li>
+        </ul>
+        <h2>Основные характеристики электросамоката</h2>
+        <p>Если вы заинтересовались нашими товарами, вы должны знать на какие параметры ориентироваться при выборе самоката. Основными характеристиками электросамоката являются:</p>
+        <section id="section-4">
+            <div class="Red cardType" id="1" onmouseenter='changeTo("1")' onmouseleave='changeFrom()'>
+                <p class = "cardText">Мощность двигателя, так как от нее зависит максимальная скорость движения</p>
+                <button>Подробнее</button>
+            </div>
+            <div class="Green cardType" id="2" onmouseenter='changeTo("2")' onmouseleave='changeFrom()'>
+                <p class = "cardText">Емкость аккумулятора, ведь чем она больше, тем дальше вы уедете, но и тем тяжелее будет самокат</p>
+                <button>Подробнее</button>
+            </div>
+            <div class="Blue cardType" id="3" onmouseenter='changeTo("3")' onmouseleave='changeFrom()'>
+                <p class = "cardText">Вес и размеры самоката. Чем больше вес и габариты, тем неудобнее носить и хранить это «средство индивидуальной мобильности»</p>
+                <button>Подробнее</button>
+            </div>
+        </section>
+        <h2>О производителях/брендах</h2>
+        <div class = "gal-obj">
+            <img src="../img/reasons/reasons3.jpg" alt="самокат" class = "reasons_image">
+            <div class = "img-wrapper">
+                <p>Электросамокаты на любой вкус и цвет</p>
+            </div>
+        </div>
+        <p>В нашем магазине представлен широкий выбор электросамокатов. У нас вы можете найти как китайские, так и западные бренды. Наибольшее число самокатов представлено брендами ninebot и kugoo.</p>
+        <h2>Покупайте электросамокаты у нас!</h2>
+        <p>Только в нашем магазине вы сможете найти электросамокаты любой фирмы и модели по самой доступной цене.</p>
+    </main>
+
+    <div class="footer-container">
+        <div class="wrapper">
+        <footer>
+            <div class="footer-table">
+                <ul class="footer-column">
+                    <div class="logo">
+                        SAMOKAT
+                    </div>
+                </ul>
+                <ul class="footer-column">
+                    <li>
+                        <h3>Магазины</h3>
+                    </li>
+                    <li>
+                        <h4>Москва</h4>
+                    </li>
+                    <li>
+                        Улица Д.А Карпова д. 1
+                    </li>
+                    <li>
+                        Улица C.А Куджа д. 15 к. 3
+                    </li>
+                    <li>
+                        <h4>Санкт-Петербург</h4>
+                    </li>
+                    <li>
+                        Большая Морская улица д. 11
+                    </li>
+                </ul>
+                <ul class="footer-column">
+                    <li>
+                        <h3>Обратная связь</h3>
+                    </li>
+                    <li>
+                        В любой день недели
+                    </li>
+                    <li>
+                        09:00 - 18:00
+                    </li>
+                    <li>
+                        <a href="#">Тел: +7(800)-555-35-35</a>
+                    </li>
+                </ul>
+                <ul class="footer-column">
+                    <li>
+                        <a href="../pages/catalog.html">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="../pages/delivery.html">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="../pages/reasons.html">О электросамокатах</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+main{
+    margin-top: 16vh;
+    margin-bottom: 16vh;
+    width: 55vw;
+    margin-left: 20vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+#map{
+    width: 30vw;
+}
+
+#contacts{
+    margin: auto 0;
+    text-align: center;
+}
+
+@media  (min-width:320px) and (max-width:769px){
+    main{
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+    #map{
+        width: 100%;
+    }
+}
